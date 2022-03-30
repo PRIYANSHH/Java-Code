@@ -71,7 +71,6 @@ public class bfsANDdfs {
 		System.out.println("Enter source and destination: ");
 		int distance = g.bfs(sc.nextInt(), sc.nextInt());
 		System.out.println(distance);
-
 	}
 
 }

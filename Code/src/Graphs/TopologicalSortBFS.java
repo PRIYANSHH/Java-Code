@@ -3,7 +3,7 @@ package Graphs;
 import java.util.*;
 
 public class TopologicalSortBFS {
-	private static LinkedList<Integer> adj[];
+	static LinkedList<Integer> adj[];
 
 	public TopologicalSortBFS(int v) {
 		adj = new LinkedList[v];

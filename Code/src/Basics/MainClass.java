@@ -20,9 +20,7 @@ public class MainClass {
 		EncapsulationIntro obj = new EncapsulationIntro();
 		obj.doWork();
 	}
-
 }
-
 class Developer extends Person {
 
 	public Developer(int age, String name) {

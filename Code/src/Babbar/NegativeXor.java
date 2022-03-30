@@ -16,9 +16,11 @@ public class NegativeXor {
 			int x = 0;
 			for (i = 0; i < n; i++) {
 				x = x ^ a[i];
+				System.out.println(Integer.toBinaryString(a[i]));
 				System.out.print(x + " ");
 			}
 			System.out.println("\n" + x);
+
 		}
 	}
 }

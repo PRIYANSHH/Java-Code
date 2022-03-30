@@ -2,21 +2,9 @@ package linkedlist;
 
 import java.util.*;
 
-import linkedlist.MergeSort_LL.Node;
-
 public class ReverseList {
 	Node head;
 	Node temp;
-
-	static class Node {
-		int data;
-		Node next;
-
-		Node(int d) {
-			data = d;
-			next = null;
-		}
-	}
 
 	/*
 	 * void push(int new_data) { Node new_node = new Node(new_data); new_node.next =
@@ -67,5 +55,15 @@ public class ReverseList {
 		}
 		list.head = Reverse(list.head);
 		printList(list.head);
+	}
+}
+
+class Node {
+	int data;
+	Node next;
+
+	Node(int data) {
+		this.data = data;
+		next = null;
 	}
 }

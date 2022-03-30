@@ -32,11 +32,11 @@ public class MiddleElement {
 	static int search(MiddleElement list) {
 		Node currNode1 = list.head;
 		Node currNode2 = list.head;
-		int i = -1;
+		int i = 0;
 		while (currNode2 != null) {
 			i++;
 			currNode2 = currNode2.next;
-			if ((i & 1) == 1)
+			if ((i & 1) == 0)
 				currNode1 = currNode1.next;
 		}
 		return currNode1.data;

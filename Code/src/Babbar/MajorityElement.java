@@ -13,16 +13,16 @@ public class MajorityElement {
 			int i;
 			for (i = 0; i < n; i++)
 				a[i] = sc.nextInt();
-			int majority = a[0];
-			int count = 1;
-			for (i = 1; i < n; i++) {
+			int majority = Integer.MIN_VALUE;
+			int count = 0;
+			for (i = 0; i < n; i++) {
 				if (a[i] == majority)
 					count++;
-				else
-					count--;
-				if (count == 0) {
+				else if (count == 0) {
 					majority = a[i];
 					count = 1;
+				} else {
+					count--;
 				}
 			}
 			int ctr = 0;

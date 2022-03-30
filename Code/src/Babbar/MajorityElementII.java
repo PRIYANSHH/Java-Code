@@ -22,10 +22,10 @@ public class MajorityElementII {
 					count2++;
 				else if (count1 == 0) {
 					first = a[i];
-					count1++;
+					count1 = 1;
 				} else if (count2 == 0) {
 					second = a[i];
-					count2++;
+					count2 = 1;
 				} else {
 					count1--;
 					count2--;
